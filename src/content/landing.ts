@@ -21,7 +21,7 @@ export interface Contact {
   notes: Note[];
 }
 
-export const productName = "[Название]";
+export const productName = "Relma";
 
 export const meta = {
   title: `${productName} — Помни людей, а не только их номера`,
