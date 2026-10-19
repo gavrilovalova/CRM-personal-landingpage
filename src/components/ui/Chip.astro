@@ -1,0 +1,25 @@
+---
+type Tone = "pink" | "lime" | "surface" | "white";
+
+interface Props {
+  tone: Tone;
+}
+
+const { tone } = Astro.props;
+
+const tones: Record<Tone, string> = {
+  pink: "bg-pink",
+  lime: "bg-lime",
+  surface: "bg-surface",
+  white: "bg-white",
+};
+---
+
+<span
+  class:list={[
+    "inline-flex self-start rounded-full px-3.5 py-2 text-14 font-bold text-ink lg:px-4 lg:py-2.25 lg:text-15",
+    tones[tone],
+  ]}
+>
+  <slot />
+</span>

@@ -1,0 +1,87 @@
+---
+import type { Contact } from "../../content/landing";
+
+type Variant = "hero" | "feed";
+
+interface Props {
+  contact: Contact;
+  /** hero: grey card with channels; feed: white card with a notes feed */
+  variant: Variant;
+  class?: string;
+}
+
+const { contact, variant, class: className } = Astro.props;
+
+const styles = {
+  hero: {
+    card: "bg-surface",
+    avatar: "size-13 bg-pink text-18 lg:size-16 lg:text-22",
+    name: "text-18 lg:text-22",
+    notes: "contents",
+    note: "gap-1 rounded-18 bg-white p-3.5 lg:gap-1.5 lg:rounded-22 lg:p-4.5",
+    noteText: "text-15 lg:text-17",
+  },
+  feed: {
+    card: "bg-white text-ink",
+    avatar: "size-12 bg-lime text-17 lg:size-15 lg:text-20",
+    name: "text-17 lg:text-21",
+    notes: "flex flex-col gap-2 lg:gap-2.5",
+    note: "gap-0.75 rounded-16 bg-surface px-3.5 py-3 lg:gap-1 lg:rounded-20 lg:px-4.5 lg:py-4",
+    noteText: "text-14 lg:text-16",
+  },
+}[variant];
+---
+
+<div
+  class:list={[
+    "flex flex-col gap-3.5 rounded-28 p-5 lg:gap-4.5 lg:rounded-36 lg:p-7",
+    styles.card,
+    className,
+  ]}
+>
+  <div class="flex items-center gap-3 lg:gap-4">
+    <span
+      class:list={[
+        "flex shrink-0 items-center justify-center rounded-full font-extrabold",
+        styles.avatar,
+      ]}
+    >
+      {contact.initials}
+    </span>
+    <div class="flex flex-col gap-0.5 lg:gap-1">
+      <span class:list={["font-bold", styles.name]}>{contact.name}</span>
+      <span class="text-14 text-subtle lg:text-16">{contact.context}</span>
+    </div>
+  </div>
+
+  {
+    contact.channels && (
+      <div class="flex flex-wrap gap-2">
+        {contact.channels.map((channel) => (
+          <span class="rounded-full bg-white px-3 py-1.5 text-13 font-medium lg:px-3.5 lg:py-2 lg:text-14">
+            {channel}
+          </span>
+        ))}
+      </div>
+    )
+  }
+
+  {
+    contact.feedLabel && (
+      <span class="text-12 font-bold tracking-caps text-subtle uppercase lg:text-13">{contact.feedLabel}</span>
+    )
+  }
+
+  <div class={styles.notes}>
+    {
+      contact.notes.map((note, index) => (
+        <div class:list={["flex-col", styles.note, note.desktopOnly ? "hidden opacity-60 lg:flex" : "flex"]}>
+          <span class:list={["text-12 font-bold lg:text-13", index === 0 ? "text-brand" : "text-subtle"]}>
+            {note.date}
+          </span>
+          <span class:list={["leading-compact", styles.noteText]}>{note.text}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>

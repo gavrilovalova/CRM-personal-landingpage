@@ -1,0 +1,38 @@
+---
+import { features, type Tone } from "../../content/landing";
+import Icon from "../ui/Icon.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+
+const tileTones: Record<Tone, { tile: string; icon: string; text: string }> = {
+  brand: { tile: "bg-brand text-white", icon: "", text: "text-on-brand-muted" },
+  surface: { tile: "bg-surface", icon: "text-brand", text: "text-muted" },
+  pink: { tile: "bg-pink", icon: "text-ink", text: "text-on-pink" },
+  lime: { tile: "bg-lime", icon: "text-ink", text: "text-on-lime" },
+};
+---
+
+<section id="features">
+  <div class="mx-auto flex max-w-page flex-col gap-6 px-5 pt-2 pb-14 lg:gap-10 lg:px-10 lg:pt-16 lg:pb-30">
+    <SectionHeading tone="lime" label={features.label}>{features.title}</SectionHeading>
+
+    <ul class="grid grid-cols-2 gap-2.5 lg:gap-4">
+      {
+        features.tiles.map((tile) => {
+          const tone = tileTones[tile.tone];
+          return (
+            <li class:list={["flex flex-col gap-2 rounded-22 p-4 lg:gap-3 lg:rounded-28 lg:p-7", tone.tile]}>
+              {tile.glyph && (
+                <span class="text-26 font-extrabold tracking-tile lg:text-36 lg:leading-flat">{tile.glyph}</span>
+              )}
+              {tile.icon && (
+                <Icon name={tile.icon} strokeWidth={2.2} class:list={["size-7 lg:size-9", tone.icon]} />
+              )}
+              <h3 class="text-16 font-bold lg:text-21">{tile.title}</h3>
+              <p class:list={["text-14 leading-compact lg:text-17", tone.text]}>{tile.text}</p>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</section>

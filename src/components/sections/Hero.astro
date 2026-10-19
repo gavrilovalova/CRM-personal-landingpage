@@ -1,0 +1,36 @@
+---
+import { PUBLIC_APP_URL } from "astro:env/client";
+import { hero } from "../../content/landing";
+import Button from "../ui/Button.astro";
+import ContactCard from "../ui/ContactCard.astro";
+import Sticker from "../ui/Sticker.astro";
+---
+
+<section
+  class="mx-auto flex max-w-page flex-col gap-6.5 px-5 pt-6.5 pb-12 lg:flex-row lg:items-center lg:gap-14 lg:px-10 lg:pt-16 lg:pb-24"
+>
+  <div class="flex flex-col gap-6.5 lg:min-w-0 lg:grow lg:basis-130 lg:gap-7">
+    <div class="flex flex-col gap-4 lg:gap-7">
+      <h1
+        class="text-44 leading-display font-extrabold tracking-display lg:text-hero lg:leading-flat lg:tracking-display-lg"
+      >
+        {hero.title.before}{" "}
+        <span class="inline-block -rotate-2 rounded-14 bg-brand px-2.5 text-white lg:rounded-22 lg:px-4"
+          >{hero.title.highlight}</span
+        ><br />
+        {hero.title.after}
+      </h1>
+      <p class="text-17 leading-body text-muted lg:max-w-140 lg:text-21">{hero.lead}</p>
+    </div>
+    <div class="flex flex-col gap-2.5 lg:flex-row lg:flex-wrap lg:items-center lg:gap-5">
+      <Button href={PUBLIC_APP_URL} class="w-full lg:w-auto">{hero.cta}</Button>
+      <span class="text-center text-14 text-subtle lg:text-16">{hero.caption}</span>
+    </div>
+  </div>
+
+  <div class="relative mt-1.5 lg:mt-0 lg:min-w-0 lg:grow lg:basis-105 lg:pt-5">
+    <Sticker tone="lime" class="-top-3.5 right-1.5 rotate-5 lg:top-0 lg:right-6">{hero.stickers.top}</Sticker>
+    <Sticker tone="pink" class="-bottom-5 -left-4 hidden -rotate-4 lg:block">{hero.stickers.bottom}</Sticker>
+    <ContactCard variant="hero" contact={hero.contact} />
+  </div>
+</section>

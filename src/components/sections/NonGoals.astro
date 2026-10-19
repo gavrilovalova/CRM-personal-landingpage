@@ -1,0 +1,27 @@
+---
+import { nonGoals } from "../../content/landing";
+import Chip from "../ui/Chip.astro";
+import Icon from "../ui/Icon.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+---
+
+<section class="rounded-t-36 bg-ink text-white lg:rounded-t-56">
+  <div class="mx-auto flex max-w-page flex-col gap-6 px-5 py-14 lg:gap-7 lg:px-10 lg:pt-26 lg:pb-34">
+    <Chip tone="white">{nonGoals.label}</Chip>
+    <SectionTitle>
+      {nonGoals.title.before}{" "}<span class="text-lime">{nonGoals.title.highlight}</span>
+    </SectionTitle>
+    <ul class="flex flex-col gap-2.5 lg:max-w-190 lg:gap-3">
+      {
+        nonGoals.items.map((item) => (
+          <li class="flex items-center gap-3.5 rounded-20 border border-line-dark p-4 lg:gap-4 lg:rounded-22 lg:p-5">
+            <span class="flex size-8 shrink-0 items-center justify-center rounded-full bg-pink text-ink lg:size-9">
+              <Icon name="cross" strokeWidth={3} class="size-3.5 lg:size-4" />
+            </span>
+            <span class="text-16 leading-compact lg:text-19">{item}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

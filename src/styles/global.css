@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  /* Tilted stickers and cards must never cause horizontal scroll */
+  body {
+    @apply overflow-x-clip bg-white font-sans leading-ui text-ink antialiased;
+  }
+
+  a:focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}

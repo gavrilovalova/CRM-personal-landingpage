@@ -1,0 +1,11 @@
+---
+import { PUBLIC_APP_URL } from "astro:env/client";
+import { footer, productName } from "../../content/landing";
+---
+
+<footer class="mx-auto max-w-page px-5 py-6 lg:px-10 lg:py-8">
+  <div class="flex items-center justify-between px-1 py-2 text-14 text-subtle lg:flex-wrap lg:gap-4 lg:px-2 lg:text-16">
+    <span>{productName}</span>
+    <a href={PUBLIC_APP_URL} class="py-3 font-bold text-brand transition-colors hover:text-brand-hover">{footer.cta}</a>
+  </div>
+</footer>

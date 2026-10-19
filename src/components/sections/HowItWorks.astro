@@ -1,0 +1,37 @@
+---
+import { howItWorks, type Tone } from "../../content/landing";
+import SectionHeading from "../ui/SectionHeading.astro";
+
+const numberTones: Partial<Record<Tone, string>> = {
+  brand: "bg-brand text-white",
+  lime: "bg-lime",
+  pink: "bg-pink",
+};
+---
+
+<section id="how" class="bg-white lg:-mt-14 lg:rounded-t-56">
+  <div class="mx-auto flex max-w-page flex-col gap-6 px-5 pt-16 pb-14 lg:gap-10 lg:px-10 lg:pt-28 lg:pb-16">
+    <SectionHeading tone="surface" label={howItWorks.label}>{howItWorks.title}</SectionHeading>
+
+    <ol class="grid gap-3 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+      {
+        howItWorks.steps.map((step, index) => (
+          <li class="flex gap-4 rounded-24 bg-surface p-5 md:last:col-span-2 lg:flex-col lg:gap-5 lg:rounded-28 lg:p-7 lg:last:col-span-1">
+            <span
+              class:list={[
+                "flex size-11 shrink-0 items-center justify-center rounded-14 text-20 font-extrabold lg:size-14 lg:rounded-18 lg:text-26",
+                numberTones[step.tone],
+              ]}
+            >
+              {index + 1}
+            </span>
+            <div class="flex flex-col gap-1 lg:gap-2">
+              <h3 class="text-18 font-bold lg:text-22">{step.title}</h3>
+              <p class="text-15 leading-body text-muted lg:text-17">{step.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

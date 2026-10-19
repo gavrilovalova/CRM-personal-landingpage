@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Референс — десктоп (1440px)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2E5CFF}a:hover{color:#1A3FD6}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; background: #FFFFFF; color: #0F0F14; font-family: 'Onest', sans-serif; overflow-x: hidden">
+
+  <!-- 1. Первый экран -->
+  <section style="width: 100%; max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 24px 40px 96px; display: flex; flex-direction: column; gap: 64px">
+    <header style="display: flex; align-items: center; justify-content: space-between; height: 56px">
+      <div style="display: flex; align-items: center; gap: 12px">
+        <div style="width: 44px; height: 44px; border-radius: 14px; background: #2E5CFF; display: flex; align-items: center; justify-content: center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>
+        </div>
+        <span style="font-size: 20px; font-weight: 700">[Название]</span>
+      </div>
+      <nav style="display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+        <a href="#how" style="color: #0F0F14; font-size: 16px; font-weight: 500; text-decoration: none">Как работает</a>
+        <a href="#features" style="color: #0F0F14; font-size: 16px; font-weight: 500; text-decoration: none">Возможности</a>
+        <a href="#faq" style="color: #0F0F14; font-size: 16px; font-weight: 500; text-decoration: none">Вопросы</a>
+        <a href="#app" style="display: flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 16px; background: #F2F4F8; color: #0F0F14; font-size: 16px; font-weight: 700; text-decoration: none">Открыть</a>
+      </nav>
+    </header>
+    <div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+        <h1 style="margin: 0; font-size: clamp(44px, 5.6vw, 80px); line-height: 1; font-weight: 800; letter-spacing: -0.035em">Помни <span style="background: #2E5CFF; color: #FFFFFF; padding: 0 16px; border-radius: 22px; display: inline-block; transform: rotate(-2deg)">людей,</span> а не только их номера</h1>
+        <p style="margin: 0; font-size: 21px; line-height: 1.45; color: #4A4D57; max-width: 560px">Умная записная книжка для тех, кого ты знаешь лично. Кто это, откуда вы знакомы, как связаться и о чём договорились — всё в одной карточке.</p>
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap">
+          <a href="#app" style="display: flex; align-items: center; justify-content: center; height: 64px; padding: 0 36px; border-radius: 22px; background: #2E5CFF; color: #FFFFFF; font-size: 19px; font-weight: 700; text-decoration: none">Добавить первый контакт →</a>
+          <span style="font-size: 16px; color: #5B5F6B">Не для продаж. Для своих.</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; position: relative; padding-top: 20px">
+        <div style="position: absolute; top: 0; right: 24px; z-index: 2; background: #C6F432; font-size: 15px; font-weight: 700; padding: 10px 16px; border-radius: 999px; transform: rotate(5deg)">вот на чём вы остановились</div>
+        <div style="position: absolute; bottom: -20px; left: -16px; z-index: 2; background: #FFB8E0; font-size: 15px; font-weight: 700; padding: 10px 16px; border-radius: 999px; transform: rotate(-4deg)">напомним 25 окт</div>
+        <div style="background: #F2F4F8; border-radius: 36px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+          <div style="display: flex; align-items: center; gap: 16px">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: #FFB8E0; font-weight: 800; font-size: 22px; display: flex; align-items: center; justify-content: center">АП</div>
+            <div style="display: flex; flex-direction: column; gap: 4px">
+              <span style="font-size: 22px; font-weight: 700">Аня Петрова</span>
+              <span style="font-size: 16px; color: #5B5F6B">Познакомились на UX-конференции</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap">
+            <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px; font-weight: 500">Телефон</span>
+            <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px; font-weight: 500">Почта</span>
+            <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px; font-weight: 500">Telegram</span>
+          </div>
+          <div style="background: #FFFFFF; border-radius: 22px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 13px; font-weight: 700; color: #2E5CFF">12 окт</span>
+            <span style="font-size: 17px; line-height: 1.4">Созвонимся, когда она запустит курс по исследованиям.</span>
+          </div>
+          <div style="background: #FFFFFF; border-radius: 22px; padding: 18px; display: flex; flex-direction: column; gap: 6px; opacity: 0.6">
+            <span style="font-size: 13px; font-weight: 700; color: #5B5F6B">3 мар</span>
+            <span style="font-size: 17px; line-height: 1.4">Советовала книгу про интервью с пользователями.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Знакомо? -->
+  <section style="background: #F2F4F8; border-radius: 56px 56px 0 0">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 104px 40px 120px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 20px; max-width: 820px">
+        <span style="align-self: flex-start; background: #FFB8E0; font-size: 15px; font-weight: 700; padding: 9px 16px; border-radius: 999px">Знакомо?</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -0.03em">Контакт в телефоне есть, а человека в памяти нет</h2>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap">
+            <span style="background: #F2F4F8; border-radius: 12px; padding: 8px 12px; font-size: 15px; font-weight: 700">Аня Конф</span>
+            <span style="background: #F2F4F8; border-radius: 12px; padding: 8px 12px; font-size: 15px; font-weight: 700">Дима (тот самый)</span>
+          </div>
+          <p style="margin: 0; font-size: 18px; line-height: 1.45">В записной книжке «Аня Конф» и «Дима (тот самый)». Кто это и откуда, уже не вспомнить.</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #C6F432; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F0F14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>
+          </div>
+          <p style="margin: 0; font-size: 18px; line-height: 1.45">Полгода назад договорились созвониться «как будет готово». Что именно должно быть готово, неясно.</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #2E5CFF; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="8" height="7" rx="2"></rect><rect x="13" y="4" width="8" height="5" rx="2"></rect><rect x="13" y="12" width="8" height="8" rx="2"></rect><rect x="3" y="14" width="8" height="6" rx="2"></rect></svg>
+          </div>
+          <p style="margin: 0; font-size: 18px; line-height: 1.45">Важное разбросано: часть в мессенджере, часть в заметках, часть нигде.</p>
+        </div>
+      </div>
+      <p style="margin: 16px 0 0; font-size: clamp(22px, 2.2vw, 32px); line-height: 1.3; font-weight: 700; max-width: 900px">Люди теряются не потому, что неважны. Просто контекст хранится в голове, а <span style="background: #C6F432; padding: 0 6px; border-radius: 8px">голова не резиновая.</span></p>
+    </div>
+  </section>
+
+  <!-- 3. Решение -->
+  <section style="background: #2E5CFF; color: #FFFFFF; border-radius: 56px 56px 0 0; margin-top: -56px">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 104px 40px 120px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <span style="align-self: flex-start; background: #C6F432; color: #0F0F14; font-size: 15px; font-weight: 700; padding: 9px 16px; border-radius: 999px">Решение</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -0.03em">Не CRM для сделок, а записная книжка с памятью</h2>
+        <p style="margin: 0; font-size: 20px; line-height: 1.5; color: #E3E9FF">У каждого человека своя карточка: имя, телефон, почта, откуда вы знакомы. Под ними лента заметок, куда ты дописываешь пару строк после каждого разговора. Через месяц или через год открываешь карточку и сразу понимаешь, на чём вы остановились.</p>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; color: #0F0F14; border-radius: 36px; padding: 28px; display: flex; flex-direction: column; gap: 18px; transform: rotate(-2deg)">
+        <div style="display: flex; align-items: center; gap: 16px">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: #C6F432; font-weight: 800; font-size: 20px; display: flex; align-items: center; justify-content: center">ДС</div>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 21px; font-weight: 700">Дима Соколов</span>
+            <span style="font-size: 16px; color: #5B5F6B">Бывший коллега · митап по фронтенду</span>
+          </div>
+        </div>
+        <span style="font-size: 13px; font-weight: 700; color: #5B5F6B; letter-spacing: 0.04em">ЛЕНТА ЗАМЕТОК</span>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <div style="background: #F2F4F8; border-radius: 20px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 13px; font-weight: 700; color: #2E5CFF">12 окт</span>
+            <span style="font-size: 16px; line-height: 1.4">Созвонимся, когда выйдет его бета. Спросить про найм.</span>
+          </div>
+          <div style="background: #F2F4F8; border-radius: 20px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 13px; font-weight: 700; color: #5B5F6B">20 апр</span>
+            <span style="font-size: 16px; line-height: 1.4">Ушёл в стартап, делает сервис для бронирования.</span>
+          </div>
+          <div style="background: #F2F4F8; border-radius: 20px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; opacity: 0.6">
+            <span style="font-size: 13px; font-weight: 700; color: #5B5F6B">2 фев</span>
+            <span style="font-size: 16px; line-height: 1.4">Познакомились на митапе, обменялись телеграмом.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Как это работает -->
+  <section id="how" style="background: #FFFFFF; border-radius: 56px 56px 0 0; margin-top: -56px">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 112px 40px 64px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 20px; max-width: 820px">
+        <span style="align-self: flex-start; background: #F2F4F8; font-size: 15px; font-weight: 700; padding: 9px 16px; border-radius: 999px">Как это работает</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -0.03em">Три шага, и ты больше не теряешь контекст</h2>
+      </div>
+      <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 16px">
+        <li style="flex: 1 1 300px; min-width: 0; background: #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
+          <span style="width: 56px; height: 56px; border-radius: 18px; background: #2E5CFF; color: #FFFFFF; font-size: 26px; font-weight: 800; display: flex; align-items: center; justify-content: center">1</span>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 22px; font-weight: 700">Добавь человека</span>
+            <span style="font-size: 17px; line-height: 1.45; color: #4A4D57">Имя, контакты и откуда знакомы. Остальное потом.</span>
+          </div>
+        </li>
+        <li style="flex: 1 1 300px; min-width: 0; background: #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
+          <span style="width: 56px; height: 56px; border-radius: 18px; background: #C6F432; font-size: 26px; font-weight: 800; display: flex; align-items: center; justify-content: center">2</span>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 22px; font-weight: 700">Найди за секунду</span>
+            <span style="font-size: 17px; line-height: 1.45; color: #4A4D57">Все контакты собраны по алфавиту, а поиск по имени найдёт нужного, даже если их сотни.</span>
+          </div>
+        </li>
+        <li style="flex: 1 1 300px; min-width: 0; background: #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
+          <span style="width: 56px; height: 56px; border-radius: 18px; background: #FFB8E0; font-size: 26px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 22px; font-weight: 700">Запиши, о чём поговорили</span>
+            <span style="font-size: 17px; line-height: 1.45; color: #4A4D57">Пара строк после звонка или встречи, и заметка ложится в ленту карточки.</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. Что умеет -->
+  <section id="features">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 64px 40px 120px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 20px; max-width: 820px">
+        <span style="align-self: flex-start; background: #C6F432; font-size: 15px; font-weight: 700; padding: 9px 16px; border-radius: 999px">Что умеет</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -0.03em">Ровно то, что нужно, и ничего лишнего</h2>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 340px; min-width: 0; background: #2E5CFF; color: #FFFFFF; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-size: 36px; font-weight: 800; letter-spacing: -0.02em; line-height: 1">А–Я</span>
+          <span style="font-size: 21px; font-weight: 700">Список по алфавиту</span>
+          <span style="font-size: 17px; line-height: 1.4; color: #E3E9FF">Все свои люди на одном экране.</span>
+        </div>
+        <div style="flex: 1 1 340px; min-width: 0; background: #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2E5CFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="9" cy="11" r="2"></circle><path d="M14 10h4M14 14h3M6 16c.6-1.4 1.7-2 3-2s2.4.6 3 2"></path></svg>
+          <span style="font-size: 21px; font-weight: 700">Карточка контакта</span>
+          <span style="font-size: 17px; line-height: 1.4; color: #4A4D57">Кто это, откуда знакомы, телефон, почта.</span>
+        </div>
+        <div style="flex: 1 1 340px; min-width: 0; background: #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2E5CFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"></path><path d="M10 20.5a2 2 0 0 0 4 0"></path></svg>
+          <span style="font-size: 21px; font-weight: 700">Напоминания</span>
+          <span style="font-size: 17px; line-height: 1.4; color: #4A4D57">Отметь, когда написать или позвонить и о чём, — напомним ровно в тот момент, когда пора.</span>
+        </div>
+        <div style="flex: 1 1 340px; min-width: 0; background: #FFB8E0; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0F0F14" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13 7l4 4"></path></svg>
+          <span style="font-size: 21px; font-weight: 700">Правка в любой момент</span>
+          <span style="font-size: 17px; line-height: 1.4; color: #2A2230">Сменил человек номер или работу — обновил за пару кликов.</span>
+        </div>
+        <div style="flex: 1 1 340px; min-width: 0; background: #C6F432; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0F0F14" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"></path></svg>
+          <span style="font-size: 21px; font-weight: 700">Лента заметок</span>
+          <span style="font-size: 17px; line-height: 1.4; color: #262B12">История общения по датам, от свежего к старому.</span>
+        </div>
+        <div style="flex: 1 1 340px; min-width: 0; background: #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2E5CFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2"></rect><rect x="15" y="9" width="7" height="11" rx="2"></rect><path d="M6 18h6"></path></svg>
+          <span style="font-size: 21px; font-weight: 700">С любого устройства</span>
+          <span style="font-size: 17px; line-height: 1.4; color: #4A4D57">Тот же адрес в другом браузере показывает те же контакты.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Чего здесь нет -->
+  <section style="background: #0F0F14; color: #FFFFFF; border-radius: 56px 56px 0 0">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 104px 40px 136px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-end">
+      <div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+        <span style="align-self: flex-start; background: #FFFFFF; color: #0F0F14; font-size: 15px; font-weight: 700; padding: 9px 16px; border-radius: 999px">Чего здесь нет (и это намеренно)</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -0.03em">Лучшее из мира CRM — для <span style="color: #C6F432">своих людей</span></h2>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+          <li style="display: flex; align-items: center; gap: 16px; border: 1px solid #2E3038; border-radius: 22px; padding: 20px">
+            <span style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #FFB8E0; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F0F14" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>
+            <span style="font-size: 19px; line-height: 1.4">Нет сделок, статусов и «этапов продаж».</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 16px; border: 1px solid #2E3038; border-radius: 22px; padding: 20px">
+            <span style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #FFB8E0; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F0F14" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>
+            <span style="font-size: 19px; line-height: 1.4">Нет напоминаний, которые дёргают каждый час.</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 16px; border: 1px solid #2E3038; border-radius: 22px; padding: 20px">
+            <span style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #FFB8E0; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F0F14" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>
+            <span style="font-size: 19px; line-height: 1.4">Нет сложной настройки: открыл и пользуешься.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Для кого -->
+  <section style="background: #FFFFFF; border-radius: 56px 56px 0 0; margin-top: -56px">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 104px 40px 64px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 20px; max-width: 820px">
+        <span style="align-self: flex-start; background: #FFB8E0; font-size: 15px; font-weight: 700; padding: 9px 16px; border-radius: 999px">Для кого</span>
+        <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -0.03em">Если людей больше, чем помещается в голове</h2>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 20px; background: #F2F4F8; border-radius: 28px; padding: 28px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2E5CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="3"></rect><path d="M8 7V5h8v2M3 12h18"></path></svg>
+          <span style="font-size: 18px; line-height: 1.45">Ходишь на конференции и митапы и знакомишься быстрее, чем запоминаешь.</span>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 20px; background: #F2F4F8; border-radius: 28px; padding: 28px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2E5CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="9" r="3"></circle><circle cx="17" cy="9" r="3"></circle><path d="M2 20c.7-3 3-5 6-5s5.3 2 6 5M14 15.5c.9-.3 1.9-.5 3-.5 3 0 5.3 2 6 5"></path></svg>
+          <span style="font-size: 18px; line-height: 1.45">Работаешь с людьми: фрилансеры, менторы, рекрутеры, организаторы.</span>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 20px; background: #F2F4F8; border-radius: 28px; padding: 28px">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2E5CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"></path></svg>
+          <span style="font-size: 18px; line-height: 1.45">Хочешь не терять друзей и старых коллег, а помнить, что у них происходит.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Вопросы -->
+  <section id="faq">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 64px 40px 120px; display: flex; flex-wrap: wrap; gap: 48px">
+      <div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 56px); line-height: 1.04; font-weight: 800; letter-spacing: -0.03em">Вопросы</h2>
+      </div>
+      <div style="flex: 999 1 640px; min-width: 0; display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 300px; min-width: 0; border: 2px solid #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; line-height: 1.3; font-weight: 700">Чем это отличается от контактов в телефоне?</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #4A4D57">Телефон хранит номер, а здесь хранится история: откуда знакомы, о чём говорили и какой следующий шаг стоит сделать для развития вашего знакомства.</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; border: 2px solid #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; line-height: 1.3; font-weight: 700">А от Notion или заметок?</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #4A4D57">Там всё можно, но всё приходится собирать самому. Здесь каждый человек сразу получает карточку и ленту, а поиск работает из коробки.</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; border: 2px solid #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; line-height: 1.3; font-weight: 700">Это бесплатно?</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #4A4D57">Да, сервис бесплатный.</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; border: 2px solid #F2F4F8; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 21px; line-height: 1.3; font-weight: 700">Кто видит мои контакты?</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #4A4D57">Никто, кроме тебя: контакты доступны только тебе.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Финальный призыв -->
+  <section style="flex-grow: 1">
+    <div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 0 40px 32px; display: flex; flex-direction: column; gap: 32px">
+      <div style="position: relative; background: #2E5CFF; color: #FFFFFF; border-radius: 48px; padding: 72px 64px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+        <div style="position: absolute; top: -20px; right: 64px; background: #C6F432; color: #0F0F14; font-size: 16px; font-weight: 700; padding: 10px 18px; border-radius: 999px; transform: rotate(4deg)">займёт минуту</div>
+        <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <h2 style="margin: 0; font-size: clamp(34px, 4.2vw, 64px); line-height: 1; font-weight: 800; letter-spacing: -0.035em">Вспомни, о чём вы договорились</h2>
+          <p style="margin: 0; font-size: 20px; line-height: 1.45; color: #E3E9FF; max-width: 560px">Добавь одного человека, с которым давно хотел созвониться, и запиши, о чём хочешь поговорить. Это займёт минуту.</p>
+        </div>
+        <a href="#app" style="flex: 0 1 auto; display: flex; align-items: center; justify-content: center; height: 68px; padding: 0 40px; border-radius: 24px; background: #FFFFFF; color: #2E5CFF; font-size: 20px; font-weight: 700; text-decoration: none">Добавить первый контакт →</a>
+      </div>
+      <footer style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 8px 8px; font-size: 16px; color: #5B5F6B">
+        <span>[Название]</span>
+        <a href="#app" style="color: #2E5CFF; font-weight: 700; text-decoration: none; padding: 12px 0">Открыть приложение</a>
+      </footer>
+    </div>
+  </section>
+</div>
+</body>
+</html>

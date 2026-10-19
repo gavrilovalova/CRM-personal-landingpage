@@ -1,0 +1,31 @@
+---
+import Audience from "../components/sections/Audience.astro";
+import Faq from "../components/sections/Faq.astro";
+import Features from "../components/sections/Features.astro";
+import FinalCta from "../components/sections/FinalCta.astro";
+import Hero from "../components/sections/Hero.astro";
+import HowItWorks from "../components/sections/HowItWorks.astro";
+import NonGoals from "../components/sections/NonGoals.astro";
+import Problem from "../components/sections/Problem.astro";
+import SiteFooter from "../components/sections/SiteFooter.astro";
+import SiteHeader from "../components/sections/SiteHeader.astro";
+import Solution from "../components/sections/Solution.astro";
+import { meta } from "../content/landing";
+import Base from "../layouts/Base.astro";
+---
+
+<Base title={meta.title} description={meta.description}>
+  <SiteHeader />
+  <main>
+    <Hero />
+    <Problem />
+    <Solution />
+    <HowItWorks />
+    <Features />
+    <NonGoals />
+    <Audience />
+    <Faq />
+    <FinalCta />
+  </main>
+  <SiteFooter />
+</Base>

@@ -1,0 +1,46 @@
+/* src/styles/global.css — стартовые токены для Tailwind CSS 4 */
+@import "tailwindcss";
+
+/* Шрифт: подключи локально, например:
+   @import "@fontsource/onest/400.css"; … 500, 700, 800
+   или <link> на Google Fonts в Base.astro */
+
+@theme {
+  --font-sans: "Onest", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand: #2E5CFF;
+  --color-brand-hover: #1A3FD6;
+  --color-ink: #0F0F14;
+  --color-surface: #F2F4F8;
+  --color-lime: #C6F432;
+  --color-pink: #FFB8E0;
+  --color-muted: #4A4D57;
+  --color-subtle: #5B5F6B;
+  --color-on-brand-muted: #E3E9FF;
+  --color-line-dark: #2E3038;
+  --color-on-pink: #2A2230;
+  --color-on-lime: #262B12;
+
+  --radius-chip: 999px;
+  --radius-card: 24px;
+  --radius-card-lg: 28px;
+  --radius-panel: 36px;
+  --radius-section: 56px;
+
+  --tracking-tight-display: -0.03em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  a:focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}

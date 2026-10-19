@@ -1,0 +1,29 @@
+---
+import { PUBLIC_APP_URL } from "astro:env/client";
+import { header, productName } from "../../content/landing";
+import Button from "../ui/Button.astro";
+import Icon from "../ui/Icon.astro";
+---
+
+<header class="mx-auto max-w-page px-5 pt-4 lg:px-10 lg:pt-6">
+  <div class="flex h-11 items-center justify-between lg:h-14">
+    <div class="flex items-center gap-2.5 lg:gap-3">
+      <span class="flex size-9 items-center justify-center rounded-12 bg-brand text-white lg:size-11 lg:rounded-14">
+        <Icon name="logo-person" class="size-5 lg:size-6" />
+      </span>
+      <span class="text-17 font-bold lg:text-20">{productName}</span>
+    </div>
+    <div class="flex items-center gap-7">
+      <nav class="hidden items-center gap-7 lg:flex">
+        {
+          header.nav.map((link) => (
+            <a href={link.href} class="text-16 font-medium transition-colors hover:text-brand">
+              {link.label}
+            </a>
+          ))
+        }
+      </nav>
+      <Button variant="ghost" size="header" href={PUBLIC_APP_URL}>{header.cta}</Button>
+    </div>
+  </div>
+</header>

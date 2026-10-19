@@ -1,0 +1,24 @@
+---
+import { faq } from "../../content/landing";
+---
+
+<section id="faq">
+  <div class="mx-auto flex max-w-page flex-col gap-6 px-5 pt-2 pb-14 lg:flex-row lg:gap-12 lg:px-10 lg:pt-16 lg:pb-30">
+    <!-- Styled as a label on mobile, a large heading on desktop -->
+    <h2
+      class="self-start rounded-full bg-surface px-3.5 py-2 text-14 font-bold lg:shrink-0 lg:basis-70 lg:rounded-none lg:bg-transparent lg:p-0 lg:text-section lg:leading-heading-lg lg:font-extrabold lg:tracking-display"
+    >
+      {faq.title}
+    </h2>
+    <div class="grid gap-2.5 md:grid-cols-2 lg:min-w-0 lg:grow lg:gap-4">
+      {
+        faq.items.map((item) => (
+          <div class="flex flex-col gap-2 rounded-24 border-2 border-surface p-5 lg:gap-2.5 lg:rounded-28 lg:p-7">
+            <h3 class="text-18 leading-title font-bold lg:text-21">{item.question}</h3>
+            <p class="text-15 leading-prose text-muted lg:text-17">{item.answer}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+---
+import { solution } from "../../content/landing";
+import Chip from "../ui/Chip.astro";
+import ContactCard from "../ui/ContactCard.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+---
+
+<section class="-mt-9 rounded-t-36 bg-brand text-white lg:-mt-14 lg:rounded-t-56">
+  <div
+    class="mx-auto flex max-w-page flex-col gap-6 px-5 py-14 lg:flex-row lg:items-center lg:gap-16 lg:px-10 lg:pt-26 lg:pb-30"
+  >
+    <div class="flex flex-col gap-6 lg:min-w-0 lg:grow lg:basis-120">
+      <Chip tone="lime">{solution.label}</Chip>
+      <SectionTitle>{solution.title}</SectionTitle>
+      <p class="text-17 leading-prose text-on-brand-muted lg:text-20">{solution.text}</p>
+    </div>
+    <ContactCard
+      variant="feed"
+      contact={solution.contact}
+      class="mt-2 -rotate-[1.5deg] lg:mt-0 lg:min-w-0 lg:grow lg:basis-119 lg:-rotate-2"
+    />
+  </div>
+</section>

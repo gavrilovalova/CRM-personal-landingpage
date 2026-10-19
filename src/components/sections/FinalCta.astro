@@ -1,0 +1,25 @@
+---
+import { PUBLIC_APP_URL } from "astro:env/client";
+import { finalCta } from "../../content/landing";
+import Button from "../ui/Button.astro";
+import Sticker from "../ui/Sticker.astro";
+---
+
+<section class="mx-auto max-w-page px-5 lg:px-10">
+  <div
+    class="relative flex flex-col gap-4.5 rounded-32 bg-brand px-5.5 pt-8 pb-6 text-white lg:flex-row lg:items-center lg:gap-10 lg:rounded-48 lg:px-16 lg:py-18"
+  >
+    <Sticker tone="lime" size="lg" class="-top-4 right-4.5 rotate-4 lg:-top-5 lg:right-16">{finalCta.sticker}</Sticker>
+    <div class="flex flex-col gap-4.5 lg:min-w-0 lg:grow lg:basis-130 lg:gap-5">
+      <h2
+        class="text-34 leading-cta font-extrabold tracking-display lg:text-cta lg:leading-flat lg:tracking-display-lg"
+      >
+        {finalCta.title}
+      </h2>
+      <p class="text-17 leading-body text-on-brand-muted lg:max-w-140 lg:text-20">{finalCta.text}</p>
+    </div>
+    <Button variant="white" size="final" href={PUBLIC_APP_URL} class="mt-1.5 w-full lg:mt-0 lg:w-auto lg:shrink-0">
+      {finalCta.cta}
+    </Button>
+  </div>
+</section>
